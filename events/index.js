@@ -6,6 +6,5 @@ const event = new EventEmitter()
 
 event.on('open', (code) => {
     console.log(`Event called with code ${code}`)
-})
-
-event.emit('open', 12)
+})   
+event.emit('open', 12) 
