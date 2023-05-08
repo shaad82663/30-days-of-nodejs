@@ -1,6 +1,6 @@
 const { spawn } = require('child_process')
 
-const child = spawn('dir.exe')
+const child = spawn('cd ..')
 
 child.stdout.on('data', (data) => {
     console.log(`Outout Data: ${data}`)

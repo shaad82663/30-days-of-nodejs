@@ -10,4 +10,4 @@ execFile('command.bat', (err, stdout, stderr) => {
         return
      }
      console.log(`Output : ${stdout}`)
-})
+}) 
