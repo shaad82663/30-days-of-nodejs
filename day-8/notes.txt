@@ -1,0 +1,12 @@
+//Publishing on npm
+
+//Login
+npm login
+Username: shaad
+Password:
+Email: (this IS public) shaad82663@gmail.com
+Logged in as shaad on https://registry.shaad82663.com
+
+//Publish
+npm publish		
+				
