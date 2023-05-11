@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
-const url = 'mongodb://0.0.0.0:27017/new_db';
+const url = 'mongodb://127.0.0.1/new_db';
 
 const connectDB = (data) => {
 MongoClient.connect(url, {
@@ -9,17 +9,17 @@ MongoClient.connect(url, {
   .then(client => {
     const db = client.db();
     console.log(`Darabse connected on ${url}`)
-    const detailsCollection = db.collection("details")
-    detailsCollection.insertOne(data)
-      .then(result => {
-        console.log('Data inseted')
-        // console.log(detailsCollection)
-        client.close()
-      })
-      .catch(err => {
-        client.close()
-        console.log(`Error in insertion: ${err}`)
-      })
+    // const detailsCollection = db.collection("details")
+    // detailsCollection.insertOne(data)
+    //   .then(result => {
+    //     console.log('Data inseted')
+    //     // console.log(detailsCollection)
+    //     client.close()
+    //   })
+    //   .catch(err => {
+    //     client.close()
+    //     console.log(`Error in insertion: ${err}`)
+    //   })
   })
   .catch(err => console.log(err.stack));
 }
