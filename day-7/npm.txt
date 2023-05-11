@@ -1,0 +1,65 @@
+// Installing NPM
+// Installing npm automatically: NPM is installed automatically by downloading node.js.
+
+// Installing npm manually: We can also install npm manually. Get the file from the link provided.
+
+// Update NPM
+// NPM updates come more frequently compared to node.js.
+// To update npm, use the following command:
+
+npm install npm@latest -g
+
+// Test the version:
+npm -v
+
+// Create package.json:
+npm init
+
+// Install all dependencies mentioned in package.json:
+npm install
+
+// Installing packages via NPM
+// 1. Local installation:
+npm install <package_name>
+
+// Test:
+// Check if the node_modules directory exists and contains the installed package.
+
+// 2. Global installation:
+npm install -g <package_name>
+
+// npm install (shortcut to install all dependencies from package.json)
+
+// Installing specific version of a package
+npm install package_name@version
+
+// If you don't know the exact version:
+npm install package_name@^major_version.0.0
+
+// Updating packages
+// Updating local packages:
+npm update
+
+// Test:
+npm outdated
+
+// Updating global packages:
+npm install -g <package_name>
+
+// Finding global outdated packages:
+npm outdated -g --depth=0
+
+// Update all outdated global packages:
+npm update -g
+
+// Removing a Package
+// Removing local packages:
+npm uninstall <package_name>
+npm uninstall --save <package_name>
+npm uninstall --save-dev <package_name>
+
+// Test:
+// Check if the package is removed from the node_modules directory.
+
+// Removing global packages:
+npm uninstall -g <package_name>
