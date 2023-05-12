@@ -1,7 +1,7 @@
 var request = require('request');
 var fs = require('fs');
 require('dotenv').config({path : './config/.env'})
-//enter your access token
+//access token
 var access_token = process.env.ACCESS_TOKEN
 //Name of the file to be uploaded
 var filename = 'myfile.txt';
