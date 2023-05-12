@@ -2,6 +2,7 @@
 cont , c - Continue execution
 next , n - Step next
 step , s - Step in  
+cmd  used : node inspect node.js
 */
 const fs = require('fs');
 
